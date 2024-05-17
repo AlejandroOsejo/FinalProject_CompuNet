@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de cuenta</title>
+</head>
+<body>
+    <h1>Registro de cuenta</h1>
+    
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+        
+        <input type="submit" value="Crear cuenta">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get form values
+        var nombre = document.getElementById('nombre').value;
+        var email = document.getElementById('email').value;
+        var contrasena = document.getElementById('contrasena').value;
+        
+        // Perform form validation
+        if (nombre === '' || email === '' || contrasena === '') {
+            alert('Please fill in all fields');
+            return;
+        }
+        
+        // Perform account creation logic here
+        
+        // Display success message
+        alert('Account created successfully');
+        
+        // Reset form
+        document.getElementById('nombre').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('contrasena').value = '';
+    });
+</script>
