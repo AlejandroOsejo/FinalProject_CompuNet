@@ -25,7 +25,7 @@
         </div>
         <input type="submit" value="Registrate">
         <div class="signup_link">
-          Ya tienes una cuenta <a href="register.html">Inicia sesión</a>
+          Ya tienes una cuenta <a href="signIn.html">Inicia sesión</a>
         </div>
       </form>
     </div>
@@ -33,14 +33,12 @@
 </html>
 <script>
     document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault(); 
         
-        // Get form values
         var nombre = document.getElementById('nombre').value;
         var email = document.getElementById('email').value;
         var contrasena = document.getElementById('contrasena').value;
         
-        // Perform form validation
         if (nombre === '' || email === '' || contrasena === '') {
             alert('Please fill in all fields');
             return;
@@ -48,10 +46,8 @@
         
         // Perform account creation logic here
         
-        // Display success message
         alert('Account created successfully');
         
-        // Reset form
         document.getElementById('nombre').value = '';
         document.getElementById('email').value = '';
         document.getElementById('contrasena').value = '';

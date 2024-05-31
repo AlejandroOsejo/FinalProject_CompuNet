@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Mega marketplace</title>
     <link rel="stylesheet" href="styleSignIn.css">
-  </head>
-  <body>
+</head>
+<body>
     <div class="center">
-      <h1>Inicio de sesion</h1>
-      <form method="post">
-        <div class="txt_field">
-          <input type="text" required>
-          <span></span>
-          <label>Usuario</label>
-        </div>
-        <div class="txt_field">
-          <input type="password" required>
-          <span></span>
-          <label>Contraseña</label>
-        </div>
-        <div class="pass">Olvidaste tu contraseña?</div>
-        <input type="submit" value="Inicia sesion">
-        <div class="signup_link">
-            ¿No tienes una cuenta? <a href="register.html">Regístrate</a>
-          </div>
-      </form>
+        <h1>Inicio de sesión</h1>
+        <form id="loginForm" method="post">
+            <div class="txt_field">
+                <input type="text" id="nombre" name="nombre" required>
+                <span></span>
+                <label>Usuario</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="contrasena" name="contrasena" required>
+                <span></span>
+                <label>Contraseña</label>
+            </div>
+            <div class="pass">¿Olvidaste tu contraseña?</div>
+            <input type="submit" value="Iniciar sesión">
+            <div class="signup_link">
+                ¿No tienes una cuenta? <a href="register.html">Regístrate</a>
+            </div>
+        </form>
     </div>
 
-  </body>
+</body>
 </html>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        var nombre = document.getElementById('nombre').value;
+        var contrasena = document.getElementById('contrasena').value;
+        
+        if (nombre === '' || contrasena === '') {
+            alert('Por favor, complete todos los campos');
+            return;
+        }
+        
+        if (nombre === 'Red' && contrasena === 'red123') {
+            alert('Inicio de sesión exitoso como usuario normal');
+        } else if (nombre === 'arceus' && contrasena === 'soyadmin') {
+            alert('Inicio de sesión exitoso como administrador');
+        } else {
+            alert('Nombre de usuario o contraseña incorrectos');
+        }
+        
+        document.getElementById('nombre').value = '';
+        document.getElementById('contrasena').value = '';
+    });
+</script>
