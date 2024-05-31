@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registro de cuenta</title>
+  <title>Registro de cuenta</title>
+  <link rel="stylesheet" href="styleRegister.css">
 </head>
 <body>
-    <h1>Registro de cuenta</h1>
-    
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required><br><br>
-        
-        <input type="submit" value="Crear cuenta">
-    </form>
-</body>
+    <div class="center">
+        <h1>Registro de cuenta</h1>
+      <form>
+        <div class="txt_field">
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre:</label>
+            <span></span>
+          </div>
+        <div class="txt_field">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <span></span>
+        </div>
+        <div class="txt_field">
+          <input type="password" id="contrasena" name="contrasena" required>
+          <label for="contrasena">Contraseña:</label>
+          <span></span>
+        </div>
+        <input type="submit" value="Registrate">
+        <div class="signup_link">
+          Ya tienes una cuenta <a href="register.html">Inicia sesión</a>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
 <script>
     document.querySelector('form').addEventListener('submit', function(event) {
