@@ -8,48 +8,23 @@
 <body>
     <div class="center">
         <h1>Inicio de sesión</h1>
-        <form id="loginForm" method="post">
+        <form id="loginForm">
             <div class="txt_field">
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="email" id="loginEmail" name="email" required>
                 <span></span>
-                <label>Usuario</label>
+                <label>Email</label>
             </div>
             <div class="txt_field">
-                <input type="password" id="contrasena" name="contrasena" required>
+                <input type="password" id="loginPassword" name="password" required>
                 <span></span>
                 <label>Contraseña</label>
             </div>
-            <div class="pass">¿Olvidaste tu contraseña?</div>
             <input type="submit" value="Iniciar sesión">
             <div class="signup_link">
                 ¿No tienes una cuenta? <a href="register.html">Regístrate</a>
             </div>
         </form>
     </div>
-
+    <script src="/BackEnd/src/users.js"></script>
 </body>
 </html>
-<script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        var nombre = document.getElementById('nombre').value;
-        var contrasena = document.getElementById('contrasena').value;
-        
-        if (nombre === '' || contrasena === '') {
-            alert('Por favor, complete todos los campos');
-            return;
-        }
-        
-        if (nombre === 'Red' && contrasena === 'red123') {
-            alert('Inicio de sesión exitoso como usuario normal');
-        } else if (nombre === 'arceus' && contrasena === 'soyadmin') {
-            alert('Inicio de sesión exitoso como administrador');
-        } else {
-            alert('Nombre de usuario o contraseña incorrectos');
-        }
-        
-        document.getElementById('nombre').value = '';
-        document.getElementById('contrasena').value = '';
-    });
-</script>
