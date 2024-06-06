@@ -12,6 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.19.2"
-  }
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroOsejo/FinalProject_CompuNet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlejandroOsejo/FinalProject_CompuNet/issues"
+  },
+  "homepage": "https://github.com/AlejandroOsejo/FinalProject_CompuNet#readme"
 }
