@@ -68,5 +68,12 @@
     "price": 1000,
     "description": "Fly as fast as a jet plane. He never misses a prey",
     "image": "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/445.png"
+  },
+  {
+    "name": "Weedle",
+    "price": "2",
+    "description": "jjj",
+    "image": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d6/latest/20200307022415/Weedle.png/200px-Weedle.png",
+    "id": 11
   }
 ]

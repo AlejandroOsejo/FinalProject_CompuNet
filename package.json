@@ -2,9 +2,9 @@
   "name": "proyecto-final",
   "version": "1.0.0",
   "description": "la propuesta consiste en desarrollar un sistema de ventas sencillo, con funcionalidades para gestionar usuarios y productos. En dicho sistema, habría usuarios de tipo administrador, quienes tendrían la capacidad de agregar productos al inventario, y usuarios de tipo cliente, quienes podrían realizar compras.",
-  "main": "index.js",
+  "main": "/web/backend/server.js",
   "scripts": {
-    "start": "node --watch src/index.js",
+    "start": "node --watch /web/backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
