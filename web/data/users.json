@@ -1,9 +1,16 @@
 [
-    {
-        "id": 1,
-        "name": "Juan Torres",
-        "email": "juandatorres@gmail.com",
-        "rol": "ADMIN",
-        "password": "ADMIN123"
-    }
+  {
+    "id": 1,
+    "name": "Juan Torres",
+    "email": "juandatorres@gmail.com",
+    "rol": "ADMIN",
+    "password": "ADMIN123"
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "rol": "USER",
+    "password": "password123"
+  }
 ]
